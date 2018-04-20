@@ -1,5 +1,3 @@
-# SimulateMemoryC
-
 					This Program is that simualte memory management which is dynamic memory blocks size
 Command to excute the program:
 ./project algorithm_name memory_size scriptfile.txt

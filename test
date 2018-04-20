@@ -1,0 +1,36 @@
+# Check Available First
+LIST AVAILABLE
+# Request A for 128
+REQUEST A 128
+# Check if A is allocated sucessfully list assigned
+LIST ASSIGNED
+# Request B C D E F for 256, 512, 1024, 2048, 4096
+REQUEST B 256
+REQUEST C 512
+REQUEST D 1024
+REQUEST E 2048
+REQUEST F 4096
+# Check available after requests
+LIST AVAILABLE
+# Check Assigned processes
+LIST ASSIGNED
+# Let's check FIND A works
+FIND A
+# lets test REALEASE A,C,E
+RELEASE A
+RELEASE C
+RELEASE E
+# let check available agian to see if memory blocks are dynamic
+LIST AVAILABLE
+# Request A: 233
+REQUEST A 233
+# Lets release the rest of the process
+RELEASE B
+RELEASE D
+RELEASE F
+# lets release the rest process to check if the memory blocks that dont allacate anything can be combined
+LIST AVAILABLE
+# Let's find A agian
+FIND A
+# Check assinged
+LIST ASSIGNED              
